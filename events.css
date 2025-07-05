@@ -1,0 +1,318 @@
+/* Events Page Specific Styles */
+
+/* Active Navigation State */
+nav a.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Current Events Section */
+.current-events {
+    padding: 0;
+    background-color: #fff;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+    border-top: 3px solid #000;
+    margin-top: 80px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.event-card {
+    border: 3px solid #000;
+    background-color: #fff;
+    margin-right: -3px;
+    margin-bottom: -3px;
+    overflow: hidden;
+}
+
+
+.event-content {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.event-content h3 {
+    font-size: 28px;
+    font-family: 'TG Frekuent Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.event-tagline {
+    font-family: 'TG Frekuent Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-style: italic;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.event-description {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: auto;
+    padding: 0;
+    margin: 0;
+    margin-bottom: -3px;
+}
+
+.event-card.featured .event-content {
+    padding: 60px 60px 0 60px;
+}
+
+.event-card.featured .event-details {
+    padding: 0;
+    margin-left: -60px;
+    margin-right: -60px;
+}
+
+.event-date-info {
+    display: flex;
+    align-items: stretch;
+    font-family: 'TG Frekuent Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-size: 14px;
+    border: 2px solid #000;
+    border-bottom: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.event-date-info span {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.event-location {
+    display: flex;
+    align-items: stretch;
+    font-family: 'TG Frekuent Regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-size: 14px;
+    padding: 0;
+    border: 2px solid #000;
+    border-bottom: 0px;
+    overflow: hidden;
+}
+
+.event-location span {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+}
+
+.event-date-info .icon,
+.event-location .icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.tickets-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 30px 12px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'TG Frekuent Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    border-bottom: none;
+}
+
+.ticket-icon {
+    height: 14px;
+    width: auto;
+    filter: brightness(0) invert(1);
+}
+
+.tickets-btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.tickets-btn:hover .ticket-icon {
+    filter: brightness(0) invert(0);
+}
+
+/* What's Next Section */
+.whats-next {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.whats-next h2 {
+    font-size: 48px;
+    font-family: 'TG Frekuent Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.coming-soon {
+    font-family: 'TG Frekuent Light', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.coming-soon p {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.anima-guapa {
+    margin-top: 50px;
+}
+
+.anima-guapa img {
+    max-width: 700px;
+    width: 80%;
+    height: auto;
+    opacity: 0.9;
+}
+
+/* Past Events Section */
+.past-events {
+    padding: 0;
+    background-color: #fff;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000;
+}
+
+.past-events h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'TG Frekuent Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    margin: 0 auto;
+    padding: 5px 400px;
+    letter-spacing: 3px;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.past-events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.past-event {
+    padding: 40px;
+    border: 3px solid #000;
+    margin-right: -3px;
+    margin-bottom: -3px;
+    transition: all 0.3s;
+}
+
+.past-event:hover {
+    background-color: #f9f9f9;
+}
+
+.past-event-date {
+    font-size: 12px;
+    font-family: 'TG Frekuent Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.past-event h4 {
+    font-size: 20px;
+    font-family: 'TG Frekuent Medium', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.past-event p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .past-events h2 {
+        padding: 5px 200px;
+    }
+}
+
+@media (max-width: 968px) {
+    .past-events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .past-events h2 {
+        padding: 5px 40px;
+        font-size: 28px;
+    }
+    
+    .whats-next h2 {
+        font-size: 36px;
+    }
+    
+    .event-content {
+        padding: 30px 20px 0 20px;
+    }
+    
+    .event-card.featured .event-content {
+        padding: 30px 20px 0 20px;
+    }
+    
+    .event-details {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 -20px;
+        padding: 0;
+    }
+    
+    .event-card.featured .event-details {
+        margin: 0 -20px;
+        padding: 0;
+    }
+    
+    .event-content h3 {
+        font-size: 20px;
+    }
+    
+    .tickets-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
